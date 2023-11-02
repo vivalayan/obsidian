@@ -19,16 +19,26 @@
             "id": "3e01ff4c8f7579fa",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Git插件配置记录/截屏2023-11-02 20.32.40.png"
+              }
+            }
+          },
+          {
+            "id": "e54f99977b9c0c44",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -155,14 +165,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3e01ff4c8f7579fa",
+  "active": "e54f99977b9c0c44",
   "lastOpenFiles": [
-    "TODO.md",
+    "Git插件配置记录/截屏2023-11-02 20.32.40.png",
     "conflict-files-obsidian-git.md",
+    "TODO.md",
     "TODO.md",
     "Git插件配置记录/屏幕截图 2023-11-03 002754.png",
     "Git插件配置记录/截屏2023-11-02 20.33.23.png",
-    "Git插件配置记录/截屏2023-11-02 20.32.40.png",
     "Git插件配置记录",
     "新建文件夹",
     "2023-10-08.md",
@@ -202,7 +212,6 @@
     "obisidian/网络攻防技术/第三次课/MD5碰撞试验",
     "obisidian/网络攻防技术/第一次课/子域名扫描工具/2023-9-5 网络攻防技术子域名收集工具.md",
     "obisidian/TODO.md",
-    "obisidian/README.md",
     "未命名 1.canvas",
     "未命名.canvas"
   ]
