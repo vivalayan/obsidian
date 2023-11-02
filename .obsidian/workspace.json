@@ -8,31 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6c6ee35b3396b721",
+            "id": "a712b164d3fd9e02",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-10-30 国际公法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bfd6d31391b3f9ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-11-03.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5110321044922
+    "width": 257.5110321044922
   },
   "right": {
     "id": "6ec751a8b1b28078",
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-11-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-11-03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2023-11-03.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,8 +138,31 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bfd6d31391b3f9ad",
+  "active": "2902027717db8b33",
   "lastOpenFiles": [
+    "Git插件配置记录/屏幕截图 2023-11-03 002754.png",
+    "Git插件配置记录/截屏2023-11-02 20.33.23.png",
+    "Git插件配置记录/截屏2023-11-02 20.32.40.png",
+    "Git插件配置记录",
+    "新建文件夹",
+    "2023-10-08.md",
+    "2023-09-29.md",
+    "每日记录/2023-10-11.md",
+    "每日记录/2023-10-08.md",
+    "每日记录/2023-09-29.md",
+    "每日记录/2023-09-28.md",
+    "每日记录/2023-11-03.md",
+    "每日记录/2023-11-02.md",
+    "每日记录/2023-10-31 多因素身份鉴别.md",
+    "每日记录/2023-10-31 Prompt.md",
+    "每日记录/2023-10-30 国际公法.md",
+    "每日记录/2023-10-29.md",
+    "每日记录/2023-10-29 网络空间安全技术.md",
+    "每日记录/2023-10-23.md",
+    "每日记录/2023-10-12.md",
+    "2023-09-28.md",
+    "2023-11-03.md",
+    "每日记录",
     "obisidian/网络攻防技术/第四次课/栈溢出实验/2023-10-17 Buffer Overflow Lab.md",
     "obisidian/网络攻防技术/第四次课/栈溢出实验",
     "obisidian/网络攻防技术/第四次课",
@@ -172,8 +174,6 @@
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.45.16.png",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.38.00.png",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.36.18.png",
-    "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.35.28.png",
-    "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.33.18.png",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/2023-9-23 端口扫描工具.md",
     "obisidian/网络攻防技术/第二次课/端口扫描工具",
@@ -181,32 +181,11 @@
     "obisidian/网络攻防技术/第三次课/MD5碰撞试验/实验过程记录",
     "obisidian/网络攻防技术/第三次课/MD5碰撞试验/2023-10-03 MD5 Collision Lab.md",
     "obisidian/网络攻防技术/第三次课/MD5碰撞试验",
-    "obisidian/网络攻防技术/第三次课",
-    "obisidian/网络攻防技术/第一次课/课堂草稿.py",
-    "obisidian/网络攻防技术/第一次课/子域名扫描工具/开发过程记录",
     "obisidian/网络攻防技术/第一次课/子域名扫描工具/2023-9-5 网络攻防技术子域名收集工具.md",
     "obisidian/TODO.md",
     "obisidian/README.md",
     "obisidian/2023-11-02.md",
     "obisidian/2023-10-23.md",
-    "obisidian/2023-10-12.md",
-    "obisidian/2023-10-11.md",
-    "obisidian/2023-10-08.md",
-    "obisidian/2023-09-29.md",
-    "obisidian/2023-09-28.md",
-    "2023-11-03.md",
-    "TODO TEST.md",
-    "网络攻防技术/BufferOverflow/2023-10-18 Buffer Overflow Lab.md",
-    "2023-09-28.md",
-    "2023-09-29.md",
-    "2023-10-08.md",
-    "README.md",
-    "2023-11-02.md",
-    "2023-10-29 网络空间安全技术.md",
-    "2023-10-31 多因素身份鉴别.md",
-    "2023-10-30 国际公法.md",
-    "网络攻防技术/第四次课/栈溢出实验/2023-10-17 Buffer Overflow Lab.md",
-    "网络攻防技术/第二次课/端口扫描工具/2023-9-23 端口扫描工具.md",
     "未命名 1.canvas",
     "未命名.canvas"
   ]
