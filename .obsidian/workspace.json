@@ -11,15 +11,24 @@
             "id": "a712b164d3fd9e02",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "c4ea5e9202b100d6",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -146,8 +155,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a712b164d3fd9e02",
+  "active": "c4ea5e9202b100d6",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "TODO.md",
     "Git插件配置记录/屏幕截图 2023-11-03 002754.png",
     "Git插件配置记录/截屏2023-11-02 20.33.23.png",
     "Git插件配置记录/截屏2023-11-02 20.32.40.png",
@@ -181,7 +192,6 @@
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.47.52.png",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.45.16.png",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.38.00.png",
-    "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录/截屏2023-09-25 10.36.18.png",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/开发过程记录",
     "obisidian/网络攻防技术/第二次课/端口扫描工具/2023-9-23 端口扫描工具.md",
     "obisidian/网络攻防技术/第二次课/端口扫描工具",
@@ -193,7 +203,6 @@
     "obisidian/TODO.md",
     "obisidian/README.md",
     "obisidian/2023-11-02.md",
-    "obisidian/2023-10-23.md",
     "未命名 1.canvas",
     "未命名.canvas"
   ]
