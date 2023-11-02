@@ -14,8 +14,21 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "3e01ff4c8f7579fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TODO.md"
+              }
             }
           }
         ]
@@ -138,8 +155,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a712b164d3fd9e02",
+  "active": "3e01ff4c8f7579fa",
   "lastOpenFiles": [
+    "TODO.md",
     "conflict-files-obsidian-git.md",
     "TODO.md",
     "Git插件配置记录/屏幕截图 2023-11-03 002754.png",
@@ -185,7 +203,6 @@
     "obisidian/网络攻防技术/第一次课/子域名扫描工具/2023-9-5 网络攻防技术子域名收集工具.md",
     "obisidian/TODO.md",
     "obisidian/README.md",
-    "obisidian/2023-11-02.md",
     "未命名 1.canvas",
     "未命名.canvas"
   ]
