@@ -130,10 +130,55 @@ diff命令没有产生输出，代表二者相同。
 
 ![[Pasted image 20231105005332.png]]
 
-https://blog.csdn.net/qq_40025866/article/details/121726260
+现在自行编写一个print_env来输出环境变量，同时考虑到父进程与子进程的区别。首先注释子进程，用父进程的环境变量，并将输出重定向至parent1.txt中。
 
+![[Pasted image 20231105011711.png]]
 
+然后用相同的方法，得到子进程的环境变量，保存在child1.txt中
 
+![[Pasted image 20231105011808.png]]
+
+查看两生成文件的不同，发现二者i相同。这说明子进程与父进程环境变量相同，且含LD_PRELOAD，即子进程继承了用户进程的LD_PRELOAD环境变量。
+
+![[Pasted image 20231105012038.png]]
+
+接下来按照同样的方法，以子进程与父进程为区别，将print_env设置为root所有的Set-UID程序，以普通用户的权限来更改环境变量。
+
+![[Pasted image 20231105012559.png]]
+
+![[Pasted image 20231105012650.png]]
+
+然后查看二者不同。可以得到结论，父进程的环境变量可以发现LD_PRELOAD环境变量，而在子进程的环境变量中找不到，即子进程没有继承用户进程的LD_PRELOAD环境变量。
+
+![[Pasted image 20231105012746.png]]
+
+将print_env程序设定为所有者为root的Set-UID 程序。以root用户更改环境变量，分别以root用户和seed用户执行程序。
+
+![[Pasted image 20231105012954.png]]
+
+将输出保存至parent3.txt
+
+![[Pasted image 20231105013035.png]]
+
+然后按照同样的操作对子进程进行操作：
+
+![[Pasted image 20231105013133.png]]
+
+最后对比生成文件的差异，发现子进程与父进程环境变量相同，且含LD_PRELOAD，即子进程继承了用户进程的LD_PRELOAD环境变量。
+
+![[Pasted image 20231105013250.png]]
+
+然后以普通用户的权限运行（直接截在一张图上），发现父进程的环境变量可以发现LD_PRELOAD环境变量，而在子进程的环境变量中找不到，即子进程没有继承用户进程的LD_PRELOAD环境变量。
+
+![[Pasted image 20231105013643.png]]
+
+最后将printenv修改为所有者为user1的Set-UID程序，以seed用户的身份执行：
+
+![[Pasted image 20231105014110.png]]
+
+父进程的环境变量可以发现LD_PRELOAD环境变量，而在子进程的环境变量中找不到，即子进程没有继承用户进程的LD_PRELOAD环境变量。
+
+造成这种现象出现的主要原因为动态链接器的保护机制。当运行进程的真实用户ID与程序的拥有者的用户ID不一致时，进程会忽略掉父进程的LD_PRELOAD环境变量；若ID一致，则子进程会继承此时运行进程的真实用户下的LD_PRELOAD环境变量，并加入共享库。
 
 ### Task 8 Invoking External Programs Using `system()` versus `execve()`
 
