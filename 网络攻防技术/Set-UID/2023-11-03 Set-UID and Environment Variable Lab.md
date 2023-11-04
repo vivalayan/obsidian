@@ -58,11 +58,14 @@ diff命令没有产生输出，代表二者相同。
 
 ![[Pasted image 20231104211121.png]]
 
-修改后，execve打印的环境变量为本机真实的环境变量，这也是extern变量environ所指向的环境变量数组。同时，execve()产生的新进程的环境变量需要在调用时进行传递。
+结论：修改后，execve打印的环境变量为本机真实的环境变量，这也是extern变量environ所指向的环境变量数组。同时，execve()产生的新进程的环境变量需要在调用时进行传递。
 ### Task 4 Environment Variables and `system()`
 
+通过阅读Linux Manual，我们知道system()通过调用fork()函数新建一个子进程；在子进程中调用execl()函数去执行command；在父进程中调用wait去等待子进程结束。
 
+![[Pasted image 20231104211504.png]]
 
+![[Pasted image 20231104211616.png]]
 ### Task 5 Environment Variables and `set-UID` Programs
 
 ### Task 6 The PATH Environment Variable and `Set-UID` Programs
