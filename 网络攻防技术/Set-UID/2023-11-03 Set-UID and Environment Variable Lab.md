@@ -68,6 +68,46 @@ diff命令没有产生输出，代表二者相同。
 ![[Pasted image 20231104211616.png]]
 ### Task 5 Environment Variables and `set-UID` Programs
 
+#### Step 1 编写以下程序
+
+![[Pasted image 20231104212340.png]]
+
+![[Pasted image 20231104212431.png]]
+
+#### Step 2 将其所有权改为root，并使其成为Set-UID程序
+
+直接采用chown和chmod来修改权限：
+
+![[Pasted image 20231104212610.png]]
+
+#### Step 3 在shell 中使用 export 命令设置以下环境变量:
+
+我们通过export来人为设定一些环境变量，然后执行我们编写的程序。结果为我们人工添加的环境变量已经被插入到了系统环境变量中。
+
+![[Pasted image 20231104213040.png]]
 ### Task 6 The PATH Environment Variable and `Set-UID` Programs
 
+编写两个版本的ls程序，一个为恶意程序，另一个为普通的通过system函数来执行的ls程序：
+
+![[Pasted image 20231104213823.png]]
+
+将task6程序设定为Set-UID程序并运行：
+
+![[Pasted image 20231104214025.png]]
+
+接下来我们修改系统的环境变量，将PATH修改为当前文件夹路径，然后将我们的恶意ls程序编译输出为ls，以达到欺骗system函数的目的：
+
+![[Pasted image 20231104214242.png]]
+
+此时还需要修改链接，将sh指向zsh，才能达到我们的攻击目的。
+
+![[Pasted image 20231104214443.png]]
+
+看到此时task6中的system函数执行结果为我们预先设定的结果，这说明我们成功欺骗了system函数，使得其采用了我们编写的ls程序。
 ### Task 7 The `LD_PRELOAD` Environment Variable and `Set-UID` Programs
+
+
+
+
+
+### Task 8 Invoking External Programs Using `system()` versus `execve()`
