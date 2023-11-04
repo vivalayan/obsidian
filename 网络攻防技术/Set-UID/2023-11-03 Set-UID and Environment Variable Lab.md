@@ -122,9 +122,13 @@ diff命令没有产生输出，代表二者相同。
 
 ![[Pasted image 20231104215656.png]]
 
-此时输出仍然是恶意版本的sleep函数的输出。退出root用户登录，我们用普通用户再次执行myprog时，仅仅休眠一秒：
+此时输出仍然是恶意版本的sleep函数的输出。退出root用户登录，我们用普通用户再次执行myprog时，仅仅休眠一秒。这说明root用户设置的环境变量仅仅局限于root用户自己能够访问。
 
 ![[Pasted image 20231104215812.png]]
+
+接下来我们添加一个用户user1，然后将myprog的所有权转移给user1。在root的情况下导出环境变量，并切换到普通用户级别。运行myprog程序过后发现并未出现预期情况，仅仅是sleep一秒。
+
+![[Pasted image 20231105005332.png]]
 
 https://blog.csdn.net/qq_40025866/article/details/121726260
 
@@ -133,3 +137,4 @@ https://blog.csdn.net/qq_40025866/article/details/121726260
 
 ### Task 8 Invoking External Programs Using `system()` versus `execve()`
 
+### Task 9 Capability Leaking
