@@ -26,6 +26,8 @@
 
 ![[Pasted image 20231104210010.png]]
 
+#### Step 2. 编译并运行以下程序
+
 然后再运行子进程，并将输出保存到file2中：
 
 ![[Pasted image 20231104210117.png]]
@@ -37,10 +39,29 @@
 diff命令没有产生输出，代表二者相同。
 ### Task 3 Environment Variables and `execve()`
 
+#### Step 1. 描述程序运行结果
 
+这个程序只是执行一个名为/usr/bin/env 的程序，它打印出当前进程的环境变量。发现执行结果为空。
 
+![[Pasted image 20231104210743.png]]
 
+我们查看execve函数的定义，其参数解释如下：
+
+![[Pasted image 20231104210924.png]]
+
+- 第一个参数为一个可执行的有效的路径名。第二个参数argv系利用数组指针来传递给执行文件，v是要调用的程序执行的参数序列，也就是我们要调用的程序需要传入的参数；envp则为传递给执行文件的新环境变量数。
+- 所以在此处，我们赋予新进程的环境变量为空，自然印出环境变量结果为空。
+
+#### Step 2. 修改程序后，描述程序运行结果
+
+任务：将第①行中 execve() 的调用更改为以下内容； 描述你的观察。
+
+![[Pasted image 20231104211121.png]]
+
+修改后，execve打印的环境变量为本机真实的环境变量，这也是extern变量environ所指向的环境变量数组。同时，execve()产生的新进程的环境变量需要在调用时进行传递。
 ### Task 4 Environment Variables and `system()`
+
+
 
 ### Task 5 Environment Variables and `set-UID` Programs
 
