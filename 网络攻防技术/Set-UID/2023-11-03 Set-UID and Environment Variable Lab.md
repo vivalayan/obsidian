@@ -106,8 +106,30 @@ diff命令没有产生输出，代表二者相同。
 看到此时task6中的system函数执行结果为我们预先设定的结果，这说明我们成功欺骗了system函数，使得其采用了我们编写的ls程序。
 ### Task 7 The `LD_PRELOAD` Environment Variable and `Set-UID` Programs
 
+首先构造我们自己的库函数mylib.c
+
+![[Pasted image 20231104214943.png]]
+
+然后我们将其编译为动态链接库。重新执行myprog程序，发现其中的sleep函数已经变为了我们自己编写的库中的函数，说明攻击成功。
+
+![[Pasted image 20231104214920.png]]
+
+接下来我们让myprog变为Set-UID程序，然后以普通用户的身份运行它：
+
+![[Pasted image 20231104215326.png]]
+
+发现其正常休眠一秒钟，然后将控制权交回shell。接下来我们再在root用户中设置LD_PRELOAD环境变量，然后再次运行myprog：
+
+![[Pasted image 20231104215656.png]]
+
+此时输出仍然是恶意版本的sleep函数的输出。退出root用户登录，我们用普通用户再次执行myprog时，仅仅休眠一秒：
+
+![[Pasted image 20231104215812.png]]
+
+https://blog.csdn.net/qq_40025866/article/details/121726260
 
 
 
 
 ### Task 8 Invoking External Programs Using `system()` versus `execve()`
+
