@@ -179,7 +179,40 @@ diff命令没有产生输出，代表二者相同。
 父进程的环境变量可以发现LD_PRELOAD环境变量，而在子进程的环境变量中找不到，即子进程没有继承用户进程的LD_PRELOAD环境变量。
 
 造成这种现象出现的主要原因为动态链接器的保护机制。当运行进程的真实用户ID与程序的拥有者的用户ID不一致时，进程会忽略掉父进程的LD_PRELOAD环境变量；若ID一致，则子进程会继承此时运行进程的真实用户下的LD_PRELOAD环境变量，并加入共享库。
-
 ### Task 8 Invoking External Programs Using `system()` versus `execve()`
+
+以root身份新创建一个目录test8，然后在该目录下新建test.txt，发现以普通用户的权限test.txt不可写。
+
+![[Pasted image 20231105103041.png]]
+
+编译以下程序，使其成为一个root拥有的Set-UID程序。 该程序将使用 system() 来调用该命令。
+
+![[Pasted image 20231105103333.png]]
+
+通过catall得到了root权限的shell，成功删除test.txt。然后注释掉system(command)语句，取消execve()语句； 程序将使用 execve() 来调用命令。
+
+![[Pasted image 20231105103424.png]]
+
+攻击失败。因为execve会执行一个新程序，而不会调用新的shell程序。
+
+![[Pasted image 20231105103521.png]]
+
+以root用户创建一个etc文件夹，文件夹内创建zzz文件，并设置其权限为0644。
+
+![[Pasted image 20231105103719.png]]
+
+更改cap_leak.c下zzz的路径
+
+![[Pasted image 20231105103824.png]]
+
+编译cap_leak.c，设置为Set-UID root程序。
+
+
+
+
+
+
+
+
 
 ### Task 9 Capability Leaking
