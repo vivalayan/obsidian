@@ -196,7 +196,7 @@ diff命令没有产生输出，代表二者相同。
 攻击失败。因为execve会执行一个新程序，而不会调用新的shell程序。
 
 ![[Pasted image 20231105103521.png]]
-
+### Task 9 Capability Leaking
 以root用户创建一个etc文件夹，文件夹内创建zzz文件，并设置其权限为0644。
 
 ![[Pasted image 20231105103719.png]]
@@ -205,14 +205,8 @@ diff命令没有产生输出，代表二者相同。
 
 ![[Pasted image 20231105103824.png]]
 
-编译cap_leak.c，设置为Set-UID root程序。
+编译cap_leak.c，设置为Set-UID root程序。在seed用户下运行，成功写入zzz。
 
+![[Pasted image 20231105104534.png]]
 
-
-
-
-
-
-
-
-### Task 9 Capability Leaking
+本Lab到此结束。
